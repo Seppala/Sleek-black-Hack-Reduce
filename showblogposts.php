@@ -59,7 +59,7 @@ Template Name: showBlogPosts
 		<?php wp_reset_query(); ?>
 		&nbsp;
 		<div class="clear"></div>
-		<?php query_posts('category_name='.get_the_title().'&post_status=publish,future');?>
+		<?php query_posts('category_name='.'blog'.'&post_status=publish,future');?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<h1><a href="<?php the_permalink(); ?>" name="post-<?php the_ID();?>"><?php the_title(); ?></a></h1>
 		<p><?php the_content(); ?>
