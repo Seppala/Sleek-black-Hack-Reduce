@@ -1,0 +1,38 @@
+-----------------------------------------------
+-----------------------------------------------
+ CHANGELOG
+-----------------------------------------------
+-----------------------------------------------
+Version: 2.8 (2010-Feb-11)
+
+		- Widetized boxes
+		- Added GPL license
+		- Added CSS for widetized calender
+		- Implemented navigation bar for parent pages
+		- Added smooth scrolling (Credit: http://kryogenix.org)
+		- Removed duplicated codes
+		- Added posts dividers
+		- Optimized comments section
+		- Revised coding
+		- Added "Last modified" date on pages
+
+
+Version: 2.0 (2009-Aug-18)
+
+		- Added theme URL
+		- Fixed coding for paragraphs
+		- Organized comment forms and footer
+		- Fixed bug in Sidebar post counts
+ 		- Fixed bug in Searchbar widget
+		- Updated RSS icons
+		- Revised coding
+
+
+Version: 1.1.1 (2009-Jun-15)
+
+		- Cleaned files
+
+
+Version: 1.1.0 (2009-Jun-13)
+
+		- The theme is released
