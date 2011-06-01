@@ -46,7 +46,7 @@ Template Name: ListPostsInCategoryThatHasSameNameAsPage_TOC
 			<?php the_content(); ?>
 		<?php endwhile; else: endif; ?>
 			
-		<h2 class="fromthe">From the blog about <?php str_replace("»", "", wp_title(); ?></h2>	
+		<h2 class="fromthe">From the blog about <?php str_replace("»", "", wp_title()); ?></h2>	
 		<?php query_posts ('category_name='.get_the_title().'&post_status=publish,future'); ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?> 
 					
