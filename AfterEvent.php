@@ -41,6 +41,10 @@ Template Name: ListPostsInCategoryThatHasSameNameAsPage_TOC_After
 
 	<div id="entries">
 	<div class="contents">
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<h1><?php the_title(); ?></h1>
+			<?php the_content(); ?>
+		<?php endwhile; else: endif; ?>
 		
 			
 		<h2 id="fromtheblog" class="fromthe">From the blog about <?php wp_title(); ?></h2>	
