@@ -23,7 +23,7 @@ Basic elements
 }
 
 #nav li ul a {
-	width: 10em;
+	width: inherit;
 }
 
 #nav li:hover ul {
