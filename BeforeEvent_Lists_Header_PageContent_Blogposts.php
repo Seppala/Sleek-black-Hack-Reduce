@@ -1,5 +1,5 @@
 <?php /*
-Template Name: ListPostsInCategoryThatHasSameNameAsPage_TOC
+Template Name: BeforeEvent_Lists_Header_PageContent_Blogposts
 */ ?>
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 	<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
@@ -43,6 +43,7 @@ Template Name: ListPostsInCategoryThatHasSameNameAsPage_TOC
 	<div class="contents">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<h1><?php the_title(); ?></h1>
+			<?php the_content(); ?>
 		<?php endwhile; else: endif; ?>
 			
 		<h2 class="fromthe">From the blog about <?php wp_title(); ?></h2>	
@@ -63,12 +64,7 @@ Template Name: ListPostsInCategoryThatHasSameNameAsPage_TOC
 		<h1><a href="<?php the_permalink(); ?>" name="post-<?php the_ID();?>"><?php the_title(); ?></a></h1>
 		<p><?php the_content(); ?>
 		<?php endwhile; else: endif; ?>
-		<?php wp_reset_query(); ?>
 
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<h1><?php the_title(); ?></h1>
-				<?php the_content(); ?>
-			<?php endwhile; else: endif; ?>
 
 <div class="separator"></div>
 
