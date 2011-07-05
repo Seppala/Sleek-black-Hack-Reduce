@@ -18,16 +18,8 @@ Basic elements
 
 #nav li ul {
 	position: absolute;
-	width: inherit;
+	width: 10em;
 	left: -999em;
-}
-
-#nav li ul li {
-	width: inherit;
-}
-
-#nav li ul li a {
-	width: inherit;
 }
 
 #nav li:hover ul {
