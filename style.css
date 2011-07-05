@@ -22,8 +22,8 @@ Basic elements
 	left: -999em;
 }
 
-#nav li ul li a {
-	width:10em;
+#nav li ul a {
+	width: 10em;
 }
 
 #nav li:hover ul {
