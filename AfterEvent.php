@@ -1,5 +1,5 @@
 <?php /*
-Template Name: ListPostsInCategoryThatHasSameNameAsPage_TOC_After
+Template Name: ListPostsInCategoryThatHasSameNameAsPage_TOC
 */ ?>
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 	<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
@@ -45,9 +45,8 @@ Template Name: ListPostsInCategoryThatHasSameNameAsPage_TOC_After
 		<h1><?php the_title(); ?></h1>
 			<?php the_content(); ?>
 		<?php endwhile; else: endif; ?>
-		
 			
-		<h2 id="fromtheblog" class="fromthe">From the blog about <?php wp_title(); ?></h2>	
+		<h2 class="fromthe">From the blog about <?php wp_title(); ?></h2>	
 		<?php query_posts ('category_name='.get_the_title().'&post_status=publish,future'); ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?> 
 					
@@ -65,11 +64,6 @@ Template Name: ListPostsInCategoryThatHasSameNameAsPage_TOC_After
 		<h1><a href="<?php the_permalink(); ?>" name="post-<?php the_ID();?>"><?php the_title(); ?></a></h1>
 		<p><?php the_content(); ?>
 		<?php endwhile; else: endif; ?>
-		
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<h1><?php the_title(); ?></h1>
-				<?php the_content(); ?>
-			<?php endwhile; else: endif; ?>	
 
 
 <div class="separator"></div>
