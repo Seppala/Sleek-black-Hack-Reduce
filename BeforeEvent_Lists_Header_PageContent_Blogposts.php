@@ -38,6 +38,11 @@ Template Name: BeforeEvent_Lists_Header_PageContent_Blogposts
 
 
 <div id="largewrapper">
+	<!-- sidebar -->
+		<div id="sidebar">
+			<?php get_sidebar(); ?>
+		</div>
+	<!-- /sidebar -->
 
 	<div id="entries">
 	<div class="contents">

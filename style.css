@@ -22,8 +22,6 @@ Basic elements
 	left: -999em;
 }
 
-ul ul {width:100%;}
-
 #nav li ul li {
 	width: 6em;
 }
